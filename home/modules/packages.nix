@@ -17,7 +17,7 @@
     r2modman
     vacuum-tube
     
-    #Fonts
+    # Fonts
     nerd-fonts._0xproto
   ];
 }
