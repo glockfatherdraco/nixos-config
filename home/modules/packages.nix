@@ -15,6 +15,9 @@
     proton-vpn
     protonplus
     r2modman
-    vacuum-tube # !!!
+    vacuum-tube
+    
+    #Fonts
+    nerd-fonts._0xproto
   ];
 }
