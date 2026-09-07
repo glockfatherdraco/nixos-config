@@ -2,7 +2,8 @@
 
 A simple [NixOS](https://nixos.org/) configuration with [COSMIC](https://system76.com/cosmic) desktop and evil Home Manager
 
-> Still a work in progress. I'm learning Nix, so expect questionable decisions
+> [!CAUTION]
+> Still a work in progress. I'm learning Nix, so expect ~~retarded~~ questionable decisions
 
 ---
 
