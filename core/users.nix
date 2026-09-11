@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
-{
+{ 
+  programs.fish.enable = true;
   users.users.gfd = {
     isNormalUser = true;
     description = "GFD"; # "Oh shit that's me"
