@@ -29,7 +29,7 @@
       };
 
       core = {
-        editor = "neovim";
+        editor = "nvim";
       };
     };
   };
