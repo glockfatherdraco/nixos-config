@@ -6,18 +6,21 @@ let
   };
 in
 {
-  Default = "Brave";
+  Default = "DuckDuckGo No-AI (No Ads)";
   DefaultPrivate = "Startpage (EU)";
   PreventInstalls = true;
 
+  # exclude
+  Remove = [
+    "DuckDuckGo No-AI"
+    "Mojeek"
+    "Startpage"
+  ];
+
+  # -- engines
   Add = [
-    (engine "Brave" "b"
-      "https://search.brave.com/search?q={searchTerms}")
-    (engine "Startpage (EU)" "sp"
-      "https://eu.startpage.com/sp/search?q={searchTerms}")
-    (engine "SearXNG (Disroot)" "srx"
-      "https://search.disroot.org/search?q={searchTerms}")
-    (engine "Wikipedia" "wiki"
-      "https://en.wikipedia.org/wiki/Special:Search?search={searchTerms}")
+    (engine "DuckDuckGo" "ddg" "https://noai.duckduckgo.com/?q={searchTerms}&kp=-1&k1=-1")
+    (engine "Startpage" "sp" "https://eu.startpage.com/sp/search?q={searchTerms}")
+    (engine "SearXNG" "srx" "https://search.disroot.org/search?q={searchTerms}")
   ];
 }

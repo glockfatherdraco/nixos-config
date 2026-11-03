@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   programs.nixcord = {
     enable = true;
@@ -32,7 +30,6 @@
         betterSettings.enable = true;
         betterUploadButton.enable = true;
         clearUrls.enable = true;
-        copyStickerLinks.enable = true;
         friendInvites.enable = true;
         fullSearchContext.enable = true;
         mutualGroupDms.enable = true;
@@ -59,7 +56,7 @@
         };
         directFileDownload.enable = true;
         disableCallIdle.enable = true;
-        expressionCloner.enable = true;
+        expressionManager.enable = true;
         fakeNitro.enable = true;
         newGuildSettings.enable = true;
         noTypingAnimation.enable = true;

@@ -3,7 +3,7 @@
   system = {
     hostname = "nix";
     arch = "x86_64-linux";
-    version = "26.05";
+    state = "26.05";
     locale = "en_US.UTF-8";
     timezone = "Europe/Vienna";
     font = "JetBrainsMono Nerd Font";
@@ -57,7 +57,7 @@
       yt-dlp
 
       audacity
-      onlyoffice-desktopeditors
+      libreoffice
       papers
 
     ];

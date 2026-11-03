@@ -1,4 +1,4 @@
-{ config, lib, pkgs, system, user, ... }:
+{ lib, pkgs, system, user, ... }:
 
 {
   # -- nix
@@ -8,7 +8,10 @@
     channel.enable = false;
 
     settings = {
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
 
       substituters = [
         "https://nix-community.cachix.org"
@@ -22,15 +25,18 @@
     };
   };
 
-  programs.nix-ld.enable = true;
+  programs = {
+    nix-ld.enable = true;
+    nix-index.enable = true;
+  };
+
   documentation.nixos.enable = false;
-  system.stateVersion = system.version;
+  system.stateVersion = system.state;
 
   # -- boot
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "tcp_bbr" ];
-
     kernel.sysctl = {
       "net.ipv4.tcp_congestion_control" = "bbr";
       "net.core.default_qdisc" = "fq";
@@ -55,10 +61,11 @@
 
       measuredBoot = {
         enable = true;
-        pcrs = [ 0 4 7 ];
-          autoCryptenroll = {
-          device = config.disko.devices.disk.main.content.partitions.root.device;
-        };
+        pcrs = [
+          0
+          4
+          7
+        ];
       };
     };
   };
@@ -83,7 +90,6 @@
   # -- networking
   networking = {
     hostName = system.hostname;
-
     networkmanager = {
       enable = true;
       dns = "systemd-resolved";
@@ -140,6 +146,9 @@
   users.users.${user.username} = {
     isNormalUser = true;
     description = user.name;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
   };
 }

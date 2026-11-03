@@ -2,7 +2,7 @@
 
 {
   home = {
-    stateVersion = system.version;
+    stateVersion = system.state;
     packages = packages pkgs;
     sessionVariables.TERMINAL = "cosmic-term";
   };

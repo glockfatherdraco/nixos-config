@@ -14,9 +14,11 @@
   "middlemouse.paste" = false;
   "network.dns.disablePrefetch" = true;
   "network.prefetch-next" = false;
-  "privacy.clearOnShutdown_v2.cache" = false;
+  "privacy.sanitize.sanitizeOnShutdown" = true;
+  "privacy.clearOnShutdown_v2.browsingHistoryAndDownloads" = true;
+  "privacy.clearOnShutdown_v2.cache" = true;
   "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
-  "privacy.clearOnShutdown_v2.historyFormDataAndDownloads" = false;
+  "privacy.clearOnShutdown_v2.formdata" = true;
   "privacy.clearOnShutdown_v2.siteSettings" = false;
   "privacy.fingerprintingProtection" = true;
   "privacy.fingerprintingProtection.overrides" = "+AllTargets,-CSSPrefersColorScheme,-JSDateTimeUTC";

@@ -2,7 +2,11 @@
 
 let
   # -- shared btrfs options
-  opts = [ "noatime" "compress=zstd" "discard=async" ];
+  opts = [
+    "noatime"
+    "compress=zstd"
+    "discard=async"
+  ];
 
   sub = mountpoint: {
     inherit mountpoint;
@@ -21,7 +25,7 @@ in
         ESP = {
           label = "EFI";
           type = "EF00";
-          size = "1G";
+          size = "2G";
           content = {
             type = "filesystem";
             format = "vfat";

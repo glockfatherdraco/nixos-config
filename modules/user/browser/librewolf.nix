@@ -1,5 +1,3 @@
-{ ... }:
-
 let
   data = ../../../assets/librewolf;
 in

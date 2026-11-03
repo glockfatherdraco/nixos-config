@@ -39,6 +39,7 @@ in
           sharedModules = hmmods;
         };
       }
-    ] ++ flakemods;
+    ]
+    ++ flakemods;
   };
 }
