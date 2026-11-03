@@ -6,8 +6,8 @@ let
   };
 in
 {
-  Default = "DuckDuckGo No-AI (No Ads)";
-  DefaultPrivate = "Startpage (EU)";
+  Default = "DuckDuckGo";
+  DefaultPrivate = "Startpage";
   PreventInstalls = true;
 
   # exclude
