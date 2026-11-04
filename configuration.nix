@@ -37,7 +37,7 @@
   # -- optional system modules
   sysmods = {
     bluetooth.enable = false;
-    gaming.enable = false;
+    gaming.enable = true;
     localsend.enable = true;
     printing.enable = false;
   };
