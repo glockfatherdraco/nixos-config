@@ -7,7 +7,7 @@
     locale = "en_US.UTF-8";
     timezone = "Europe/Vienna";
     font = "JetBrainsMono Nerd Font";
-    dotfiles = "/etc/nixos";
+    dotfiles = "/home/gfd/nixos-config";
     disk = "/dev/disk/by-id/nvme-CUSU_CV3500Q_512GB_70QL8A4Z25I2X0FZKJ3N";
     dns = [
       "1.1.1.1#cloudflare-dns.com"
