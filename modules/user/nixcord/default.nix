@@ -2,20 +2,12 @@
   programs.nixcord = {
     enable = true;
 
-    discord = {
+    discord.enable = false;
+    vesktop = {
       enable = true;
-      vencord.enable = true;
-      openASAR.enable = true;
-      krisp.enable = false;
 
       settings = {
-        enableHardwareAcceleration = false;
-        offloadAdmControls = true;
-        openH264Enabled = true;
-        openasar = {
-          quickstart = true;
-          setup = true;
-        };
+        hardwareAcceleration = false;
       };
     };
 
