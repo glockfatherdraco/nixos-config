@@ -9,7 +9,6 @@ let
     disko.nixosModules.disko
     lanzaboote.nixosModules.lanzaboote
     home-manager.nixosModules.home-manager
-    nix-flatpak.nixosModules.nix-flatpak
     nix-index-database.nixosModules.default
   ];
 

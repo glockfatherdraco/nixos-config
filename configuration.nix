@@ -42,11 +42,6 @@
     printing.enable = false;
   };
 
-  # -- flatpaks
-  flatpaks = [
-    "space.bigrat.mocktail"
-  ];
-
   # -- packages
   packages =
     pkgs: with pkgs; [
@@ -59,6 +54,5 @@
       audacity
       libreoffice
       papers
-
     ];
 }
